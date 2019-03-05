@@ -1,2 +1,2 @@
 # Webpack template
-**- npm init**
+Download the template and run the command. - **npm init**
