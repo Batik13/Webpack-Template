@@ -1,0 +1,2 @@
+# webpack-template
+**npm init **
