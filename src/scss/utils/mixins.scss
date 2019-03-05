@@ -1,0 +1,52 @@
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin rotate($name, $duration) {
+  -webkit-animation-name:$name;
+  -webkit-animation-duration:$duration;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: $name;
+  -moz-animation-duration:$duration;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:linear;
+
+  @-webkit-keyframes rotate {
+    from {-webkit-transform:rotate(0deg);}
+    to {  -webkit-transform:rotate(360deg);}
+  }  
+  @-moz-keyframes rotate {
+    from {-moz-transform:rotate(0deg);}
+    to {  -moz-transform:rotate(360deg);}
+  }
+
+  @-webkit-keyframes rotate-reverse {
+    from {-webkit-transform:rotate(360deg);}
+    to {  -webkit-transform:rotate(0deg);}
+  }  
+  @-moz-keyframes rotate-reverse {
+    from {-moz-transform:rotate(360deg);}
+    to {  -moz-transform:rotate(0deg);}
+  }
+}

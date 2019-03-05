@@ -1,0 +1,115 @@
+section, .section {
+  position: relative;
+  padding: 40px 0;
+  @media screen and (max-width: $desktopWidth) {
+    padding: 36px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 28px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 20px 0;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrap {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  max-width: $desktopWidth;
+  margin: 0 auto;
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: tableWidth;
+  }
+  @media screen and (max-width: $tableWidth) {
+    max-width: phoneWidth;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    max-width: smPhoneWidth;
+  }
+}
+
+.icon {
+  display: inline-block;
+}
+
+.tac {
+  text-align: center;
+}
+
+.hvr-wobble-vertical-active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.mm-navbar__title {
+  font-family: $secondFont;
+  color: $primary-color !important;
+}
+.mm-listitem__text {
+  font-family: $secondFont;
+}
+.mm-listitem__text:hover {
+  color: $primary-color !important;
+}
+
+#dropdownMenu {
+  display: none;
+  position: fixed;
+  float: left;
+  z-index: 9999;
+  margin-top: 12px;
+}
+#dropdownMenu li {}
+#dropdownMenu li a {
+  font-family: $secondFont;
+  font-size: 14px;
+  position: relative;
+  float: left;
+  width: 99%;
+  background: #323232e0;
+  padding: 12px 16px;
+  color: white;
+  margin-top: 1px;
+  background-color: rgba(45,45,45,0.90);
+}
+#dropdownMenu li a:hover {
+  background: $primary-color;
+}
+#dropdownMenu li:hover a.main {
+  background: $primary-color;
+}
+.dropsubmenu {
+  display: none;
+  margin-top: 0!important;
+  margin-left: 177px!important;
+  width: 200px;
+  border-left: 2px solid $primary-color;
+}
+.dropsubmenu.big {
+  width: 400px;
+}
+.dropsubmenu.last {
+  margin-top: 42px !important;
+}
+.dropsubmenu.big li {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+#dropdownMenu li:hover .dropsubmenu {
+  display: block;
+}

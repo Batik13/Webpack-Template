@@ -1,0 +1,148 @@
+.reviews {
+  margin-top: 50px;
+  margin-bottom: 330px;
+}
+.reviews__title {
+
+}
+.reviews__container {
+  margin-top: 60px;
+  padding: 0 10px;
+}
+.reviews-slider {
+
+}
+.reviews-slider__item {
+  
+}
+.slick-slide {
+}
+.review {
+  display: flex !important;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.review__author {
+  width: 180px;
+}
+.r-author {
+  text-align: center;
+}
+.r-author__img {
+
+}
+.r-author__img img {
+  border: 33px solid #F4EEE7;
+  border-radius: 50%;
+  width: 172px;
+  height: 172px;
+}
+.r-author__name {
+  font-family: $secondFont;
+  font-size: 20px;
+  color: #191B1F;
+  font-weight: 500;
+  margin-top: 6px;
+}
+.r-author__post {
+  font-family: $secondFont;
+  font-size: 15px;
+  font-style: italic;
+  color: #82858C;
+}
+.review__content {
+  width: 400px;
+}
+.r-content {
+
+}
+.r-content__title {
+
+}
+.r-content__title p {
+  font-family: $secondFont;
+  font-size: 20px;
+  color: #191B1F;
+}
+.r-content__text {
+
+}
+.r-content__text p {
+  font-family: $secondFont;
+  font-size: 17px;
+  color: #82858C;
+}
+
+.reviews__arrow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto 0 auto;  
+  padding: 0 10px;
+}
+
+.slick-arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #E8E8E8;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.slick-arrow:hover {
+  background: none;
+  border: 2px solid #EDEDED;
+}
+.slick-arrow:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -6px;
+  margin-left: -3px;
+}
+.slick-arrow:before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 12px;
+}
+.slick-prev:before {
+  background: url('../img/1.jpg') 0 0 no-repeat;
+  transform: rotate(180deg);
+}
+.slick-prev:hover:before {
+  background-position: -7px 0;
+  transform: rotate(180deg);
+}
+.slick-next:before {
+  background: url('https://via.placeholder.com/30x30') 0 0 no-repeat;
+}
+.slick-next:hover:before {
+  background-position: -7px 0;
+}
+
+@media screen and (max-width: $desktopWidth - 1) {
+
+}
+@media screen and (max-width: $smDesktopWidth - 1) {
+  
+}
+@media screen and (max-width: $tableWidth - 1) {
+  
+}
+@media screen and (max-width: $phoneWidth - 1) {
+  .review {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review__content {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: $smPhoneWidth - 1) {
+  
+}

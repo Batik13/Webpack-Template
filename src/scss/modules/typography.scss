@@ -1,0 +1,225 @@
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+		font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+		font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;  
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a {
+  text-decoration: none;
+  transition: all .3s;
+}
+
+a:hover{
+  transition: all .3s;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark {
+  background: #374152;
+}
+
+.wrapper-buttons{
+  padding: 0 50px;
+}
+
+h1 {
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-size: rem(70);
+  color: #ffffff;
+  line-height: rem(70);
+}
+
+h1.style-dark{
+  color: $dark-color;
+}
+
+h1 span{
+  color: $primary-color;
+}
+
+h2 {
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-size: rem(50);
+  color: #ffffff;
+  line-height: rem(50);
+}
+
+h2.style-dark{
+  color: $dark-color;
+}
+
+h3 {
+  font-family: $secondFont;
+  font-weight: normal;
+}
+
+h3.style-dark{
+  color: $dark-color;
+}
+
+h4 {
+  font-family: $secondFont;
+  font-weight: normal;
+  color: $mainFontColor;
+}
+
+p {
+  font-family: $secondFont;
+  font-weight: normal;
+  color: $default-color;
+}
+
+p.style-dark {
+  color: $dark-color;
+}
+
+.btn {
+  width: $btnWidth;
+  height: rem(60);
+  font-family: $secondFont;
+  font-weight: 500;
+  background: $primary-color;
+  color: $default-color;
+  text-align: center;
+  border-radius: 5px;  
+  display: inline-block;
+  line-height: rem(61);
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.btn i{
+  font-style: normal;
+}
+
+.btn i:before,
+.btn i:after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background: #716353;
+}
+
+.btn i:before{
+  left: -30px;
+  top: 50%;
+}
+
+.btn i:after{
+  right: -30px;
+  top: 50%;
+}
+
+.btn_big{
+  width: 100%;
+  max-width: $btnBigWidth;
+}
+
+.btn_small{
+  width: $btnSmallWidth;
+}
+
+.btn:hover{
+  color:  $primary-color;
+  background: $default-color;
+}
+
+.btn:before{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  background: $default-color;
+  opacity: 0.3;
+  height: 15px;
+  left: 15px;
+  width: $btnWidth - 30;  
+  border-radius: 0 0 5px 5px;
+  cursor: default;
+}
+
+.btn_big:before{
+  width: $btnBigWidth - 30;
+}
+
+.btn_small:before {
+  width: $btnSmallWidth - 30;
+}
+
+.not_decor::before,
+.not_decor::after,
+.not_decor i:before,
+.not_decor i:after {
+  display: none;
+}
+
+.style_white {
+  background: $default-color;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+  line-height: rem(60);
+}
+
+.style_white:hover {
+  background: #E8E8E8;
+  color: $primary-color;
+  border: 2px solid #E8E8E8;
+}
+
+h5 {
+  font-family: $secondFont;
+  color: $mainFontColor;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: $desktopWidth - 1) {
+
+}
+@media screen and (max-width: $smDesktopWidth - 1) {
+  
+}
+@media screen and (max-width: $tableWidth - 1) {
+  
+}
+@media screen and (max-width: $phoneWidth - 1) {
+  .btn i:after, .btn i:before {
+    display: none;
+  }  
+}
+@media screen and (max-width: $smPhoneWidth - 1) {
+  
+}

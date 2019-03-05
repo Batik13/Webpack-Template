@@ -1,0 +1,146 @@
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: rem(48) 0;
+}
+
+#header.active {
+  background: #737986;
+  padding: 12px 0 8px 0;
+  visibility: visible !important;
+}
+
+.logo{
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+.logo__img{
+
+}
+
+.wrap-humburger-menu{
+
+}
+
+.humburger-menu{
+
+}
+
+.icon_humburger-ligth{
+  background: url(https://via.placeholder.com/30x30);
+  width: 20px;
+  height: 16px;
+}
+
+.icon_humburger-dark{
+  background: url(https://via.placeholder.com/30x30);
+  width: 20px;
+  height: 16px;
+}
+.lp-menu{
+}
+
+.lp-menu__item{
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.lp-menu__link{
+  font-family: $secondFont;
+  font-size: rem(20);
+  font-weight: 500;
+  color: #fff;
+}
+
+.lp-menu__link:hover{
+  color: $primary-color;
+}
+
+.wrap-phone {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.phone {
+  display: flex;
+}
+
+.phone__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.call-animate {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+}
+
+.call-animate:before {
+  border: 2px solid #545252;
+  border-radius: 50%;
+}
+
+.call_brown {
+  background: #716353;
+}
+
+.call_gray {
+
+}
+
+.icon_phone-light {
+  width: 12px;
+  height: 12px;
+  background: url(https://via.placeholder.com/30x30);
+}
+
+.phone__numb {
+
+}
+
+.phone-number {
+  font-size: rem(20);
+  font-family: $secondFont;
+  font-weight: bold;
+  color: $default-color;
+  display: flex;
+  align-items: center;
+}
+
+.phone-number:hover {
+  color: $primary-color;
+}
+
+.phone-number span {
+  font-size: rem(13);
+  font-weight: 500;
+  padding: 0 10px;
+  position: relative;
+  top: -1px;
+}
+
+.dark .lp-menu__link {
+  color: #374152;
+}
+
+.dark .phone-number {
+  color: #82858C;
+}
+
+#header.dark.active {
+  background: #bfc5d4;
+}

@@ -1,0 +1,58 @@
+#first-screen {
+  background: url(../img/1.jpg) no-repeat 50% 0;
+  min-height: 109vh;
+  background-size: cover;
+}
+
+.wrap-schengen-box {
+  padding-top: rem(206);
+}
+
+.schengen-box {
+
+}
+
+.schengen-box__title {
+
+}
+
+.schengen-box__description {
+  padding-top: rem(12);
+  font-size: rem(24);
+}
+
+.schengen-box__button {
+  padding-top: rem(15);
+}
+
+
+@media screen and (max-width: $desktopWidth - 1) {
+  #first-screen {
+    min-height: 90vh;
+  }
+}
+@media screen and (max-width: $smDesktopWidth - 1) {
+  .wrap-schengen-box {
+    padding-top: rem(150);
+  }
+}
+@media screen and (max-width: $tableWidth - 1) {
+  #first-screen {
+    min-height: 80vh;
+  }
+  .wrap-schengen-box {
+    text-align: center;
+  }
+}
+@media screen and (max-width: $phoneWidth - 1) {
+  #first-screen {
+    min-height: 600px;
+    padding-bottom: 100px;
+  }
+  .wrap-humburger-menu {
+    text-align: right;
+  }  
+}
+@media screen and (max-width: $smPhoneWidth - 1) {
+  
+}
