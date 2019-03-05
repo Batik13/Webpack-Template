@@ -1,2 +1,2 @@
 # webpack-template
-**npm init**
+**- npm init**
