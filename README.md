@@ -11,7 +11,7 @@ npm install
 ```
 
 ### Modes of operation
-After downloading the template, go to the webpack.config.js file and select the desired **publicPath**. Next, run the command:
+After downloading the template, go to the **webpack.config.js** file and select the desired **publicPath**. Next, run the command:
 
 for development
 ```
